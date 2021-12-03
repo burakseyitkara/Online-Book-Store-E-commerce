@@ -1,0 +1,595 @@
+*{
+  font-size:16px ;
+  font-family: 'Roboto Slab', serif;
+}
+  
+#indexbanner{
+  font-family: 'Vollkorn', serif;
+  color:white;
+  text-align:center;
+  background:rgb(47, 74, 197);
+  font-size:45px;
+  font-weight:600;
+  text-shadow: 2px 2px black;
+  letter-spacing: 4px;
+}
+    
+
+
+
+/*ARAMA KISMI BİÇİMLENDİRİLMESİ */
+
+
+
+
+.search {
+  width:450px;
+  position: relative;
+  display: flex;
+}
+.search input{
+  border: 2px solid black;
+  margin-bottom: 5px;
+  box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+  transform: skew(-3deg, 1deg);
+  letter-spacing: 2px;
+  text-indent: 10px;
+}
+.searchTerm {
+  width: 100%;
+  border: 3px solid purple;
+  border-right: none;
+  height: 42px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000000;
+}
+.search input:focus{
+  outline: none;
+}
+.searchButton {
+  width: 55px;
+  height: 45px;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid black;
+  box-shadow: 3px 1px 0px 2px;
+  transform: skew(-3deg, 1deg);
+}
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*GİRİŞ YAP BUTONU */
+
+#profile-bean{
+  position: absolute;
+  right: 150px;
+}
+#logout-bean{
+  background-color: red;
+}
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #ffff;
+  background-color: #5852b3;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 5px 15px 9px 15px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: #efe5fe;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 1px solid transparent;
+  color: #4b0082;
+  transform: scale(1.05);
+  will-change: transform;
+  text-decoration: none;
+}
+.slider-area{
+  background-color: #efe5fe;
+}
+
+
+
+/* ANASAYFA KATEGORİ ÇOK SATANLAR YENİ ÇIKANLAR İLETİŞİM KISMININ HOVER OLAYI */
+
+
+
+
+.bottom-header{
+  background-color: #efe5fe;
+  height: 80px;
+  padding-top: 20px;
+  text-align: center;
+}
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: purple;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+.svg-wrapper:hover{
+  background-color: #80b3ff;
+  transition: 1s all ease;
+}
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: purple;
+}
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+#text a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+  
+/* LOGIN SAYFASI*/ 
+
+main{
+  background-color: #a39be9;
+  text-align: center;
+  height: 900px;
+}
+.login-form-area{
+  margin: auto;
+  padding-top: 160px;
+}
+.login-form{
+  margin: auto;
+  padding: 55px 60px 50px 50px;
+  background-color: white;
+  border: 3px solid tomato;
+  height: 550px;
+  width: 700px;
+  box-shadow: 0px 10px 30px 0px rgb(13 12 13 / 100%);
+}
+.login .login-form-area .login-header{
+  text-align: center;
+}
+.login .login-form-area .login-header p{
+  font-size: 35px;
+  font-weight: bold;
+}
+.login .login-form-area .login-header span{
+  font-size: 20px;
+  font-weight: 4  00;
+}
+.input-box{
+  text-align: left;
+  height: 280px;
+  padding-top: 34px;
+  padding-bottom: 70px;
+}
+.input-box label{
+  font-weight: 500;
+}
+.login .login-form-area .input-box input{
+  background-color: #ffff;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+}
+.login .login-form-area .login-footer{
+  text-align: left;
+  display:block;
+}
+.login .login-form-area .login-footer p{
+  margin-top: 50px;
+  font-weight: 700;
+  padding-left: 4px;
+}
+.login .login-form-area .login-form .input-box .btn{
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 150px;
+}
+.login .login-form-area .login-form .input-box .alert{
+  width: 400px;
+  float: left;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.login .login-form-area .login-footer a{
+  text-decoration: none;
+}
+
+
+
+
+
+/* REGISTER SAYFASI*/ 
+
+
+
+
+
+.register-form-area{
+  margin: auto;
+  padding-top: 95px;
+}
+.register-form{
+  margin: auto;
+  padding: 55px 60px 50px 50px;
+  background-color: white;
+  border: 3px solid tomato;
+  height: 740px;
+  width: 700px;
+  box-shadow: 0px 10px 30px 0px rgb(13 12 13 / 100%);
+}
+.register .register-form-area .register-header{
+  text-align: center;
+}
+.register .register-form-area .register-header p{
+  font-size: 35px;
+  font-weight: bold;
+}
+.register .register-form-area .register-header span{
+  font-size: 20px;
+  font-weight: 4  00;
+}
+.register-input-box{
+  text-align: left;
+  height: 500px;
+  padding-top: 34px;
+  padding-bottom: 70px;
+}
+.register-input-box label{
+  font-weight: 500;
+}
+.register .register-form-area .register-input-box input{
+  background-color: #ffff;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+}
+.register .register-form-area .register-input-box button{
+  float: right;
+  margin-top: 25px;
+  font-size: 20px;
+  width: 150px;
+}
+.register .register-form-area .register-input-box .alert{
+  width: 400px;
+  float: left;
+  margin-top: 8px;
+  font-weight: 500;
+}
+  
+/* FOOTER KISMI */
+  
+.footer-basic {
+  margin: 25px 0px 25px 0px;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+.footer-basic li {
+  padding:0 10px;
+}
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+.footer-basic ul a:hover {
+  opacity:1;
+}
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+.footer-basic .social > a > i{
+  padding-left: 2px;
+}
+.footer-basic .social > a:hover {
+  opacity:0.9;  
+}
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+
+
+
+
+
+/* KİTAP KARTLARIYLA İLGİLİ CSS'LER */  
+
+
+
+
+
+
+.discount-badge { 
+  font-size: 16px;
+  display: table-cell;
+  width: 45px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #e8205c;
+  color: #fff;
+  right: 15px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 25px;
+  line-height: 13px;
+}
+.book-price .old-price{
+  text-decoration: line-through;
+  height: 16px;
+  line-height: 16px;
+  text-align: left;
+  font-size: 12px;
+  margin-right: 40px;
+  color: #919191;
+  font-weight: 500;
+}
+.book-price .product-price{
+  font-size: 15px;
+  color: black;
+  font-family: "AvenirDemi",sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  display: block;
+  margin-right: 35px;
+  height: 20px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.book-price{
+  margin-bottom: 10px;
+}
+#books a{
+  text-decoration: none;
+  color: black;
+}
+#books .name a{
+  font-size: 17px;
+}
+#books .author a{
+  color: rgb(47, 74, 197);
+  font-weight: bold;
+  font-size:15px;
+}
+#books .publisher a{
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(36, 34, 34);
+}
+#books .card{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: transform .2s;
+  background-color: rgb(235, 229, 218);
+}
+#books .card:hover{
+  transform: scale(1.1);
+}
+.navbar-brand{
+  font-family: 'Dancing Script', cursive; 
+  font-size:35px;
+}
+#tumunu-goruntule p{
+  text-align: right;
+  font-size:15px;
+  margin-top: 25px;
+}
+#tumunu-goruntule i {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 5px;
+}
+#sketchy {
+  display: inline-block;
+  border: 3px solid #333333;
+  font-size: 2.5rem;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: rgb(172, 223, 53);
+  position: relative;
+}
+#product-border{
+  padding: 0px;
+  border: 3px solid #333333;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  letter-spacing: 0.3ch;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 2px 0 2px;
+}
+#desc-border{
+  padding: 0px;
+  border: 3px solid #333333;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  letter-spacing: 0.3ch;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  padding:15px;
+  text-align: justify;
+}
+#desc-border p,i{
+  font-family: 'Open Sans', sans-serif;
+}
+#arama{
+  background-color: red;
+  margin-top: 150px;
+  text-align: center;
+  height: auto;
+}
+img{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+  
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+  
+  
+  
+  
+    
+
+
+    
+
+
+
+  
+  
+
+
+  
